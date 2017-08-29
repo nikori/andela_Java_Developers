@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="insideInset"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/mytoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/myimgv"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="15sp"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10sp"
+            android:layout_height="80sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="ID :"
+                android:textStyle="bold"
+                android:layout_marginLeft="15sp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="myid"
+                android:padding="10sp"
+                android:background="@color/content_background"
+                android:id="@+id/myid"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:layout_marginBottom="10sp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:text="USERNAME :"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myuname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/content_background"
+                android:padding="10sp"
+                android:text="myusername" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10sp"
+            android:layout_height="80sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="GITHUB URL :"
+                android:textStyle="bold"
+                android:layout_marginLeft="15sp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="myurl"
+                android:padding="10sp"
+                android:background="@color/content_background"
+                android:id="@+id/myurl"
+
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10sp"
+            android:layout_height="80sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="TYPE :"
+                android:textStyle="bold"
+                android:layout_marginLeft="15sp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="mytype"
+                android:padding="10sp"
+                android:background="@color/content_background"
+                android:id="@+id/mytype"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10sp"
+            android:layout_height="80sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="SITE ADMIN? :"
+                android:textStyle="bold"
+                android:layout_marginLeft="15sp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="myadmin"
+                android:padding="10sp"
+                android:background="@color/content_background"
+                android:id="@+id/myadmin"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="80sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="SCORE :"
+                android:textStyle="bold"
+                android:layout_marginLeft="15sp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="myscore"
+                android:padding="10sp"
+                android:background="@color/content_background"
+                android:id="@+id/myscore"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:id="@+id/share"
+            android:text="SHARE"
+            android:onClick="Share"
+            android:layout_width="match_parent"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
